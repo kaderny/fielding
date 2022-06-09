@@ -1,0 +1,29 @@
+// * {
+//   box-sizing: border-box;
+//   margin: 0;
+//   padding: 0;
+//   font-family: "Barlow Condensed", sans-serif;
+// }
+
+.app {
+  height: 100vh;
+
+  .sections {
+    width: 100%;
+    height: calc(100vh - 75px);
+    background-color: rgb(151, 93, 103);
+    position: relative;
+    top: 70px;
+    scroll-behavior: smooth; //to make scrolling smoother
+    //to hide scroll bar
+    scrollbar-width: none; //firefox
+    &::-webkit-scrollbar {
+      display: none;
+    } //other browsers
+
+    > * {
+      width: 100vw;
+      height: calc(100vh - 70px);
+    }
+  }
+}

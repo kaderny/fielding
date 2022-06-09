@@ -1,0 +1,8 @@
+export { default as Cert1 } from './Cert1'
+export { default as Cert2 } from './Cert2'
+export { default as Cert3 } from './Cert3'
+export { default as Cert4 } from './Cert4'
+export { default as Cert5 } from './Cert5'
+export { default as Cert6 } from './Cert6'
+export { default as Cert7 } from './Cert7'
+export { default as Cert8 } from './Cert8'
