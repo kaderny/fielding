@@ -17,7 +17,7 @@ export default function Landing() {
       showCursor: false,
       backDelay: 1500,
       backSpeed: 70,
-      showCursor: true,
+      // showCursor: true,
       strings: ["PILATES", "WELLNESS", "CAREER", "YOGA"],
     });
   }, []);
