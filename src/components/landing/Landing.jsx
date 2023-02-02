@@ -27,7 +27,7 @@ export default function Landing() {
       <div className="left">
         <div className="wrapper">
           <h1>
-            START YOUR <span className="blue" ref={textRef}></span>JOURNEY
+            START YOUR <span className="blue" ref={textRef}></span> JOURNEY
           </h1>
           <h2>
             With <span className="blue">KIMBERLY FIELDING </span> OVER{" "}
@@ -46,7 +46,7 @@ export default function Landing() {
               placeholder=" Type your em@il address"
             />
             <button className="buttonJoin" type="button">
-              JOIN US
+              JOiN
             </button>
           </div>
 

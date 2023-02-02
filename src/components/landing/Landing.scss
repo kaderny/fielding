@@ -49,17 +49,17 @@
       border-radius: 80%;
       font-family: "Barlow Condensed", sans-serif;
       font-weight: 500;
-      background-color: #d3bafa;
-      border: $mainColor 1px solid;
-      color: $mainColor;
+      background-color: #4A7AFF;
+      border:  1px darkgreen;
+      color: $Yellowcolor;
       font-size: 22px;
       padding: 10px 10px;
       margin-left: 10px;
       // box-shadow: (0 0 5px rgba(81, 203, 238, 1));
       // box-shadow: -3px 3px orange, -2px 2px orange, -1px 1px orange;
       &:hover {
-        background-color: $mainColor;
-        color: $Yellowcolor;
+        background-color: #DCF2F0;
+        color: $mainColor;
         // box-shadow: (0 0 10px rgb(209, 238, 81));
         // transform: translate(0.9em, -0.9em);
         // transition: all 0.25s linear;
@@ -73,13 +73,16 @@
       height: 6vh;
       width: 15vw;
       padding: 1rem 1rem;
-      border-radius: 12%;
+       border-radius: 10px;
+      background-color: #F2F2F2;
+       transition: 0.3s background-color ease-in-out, 0.3s box-shadow ease-in-out;
+
       // box-shadow: (0 2px 5px rgba(81, 203, 238, 1));
       // box-shadow: -3px 3px orange, -2px 2px orange, -1px 1px orange;
       &:hover {
         // box-shadow: (0 2px 5px rgba(81, 203, 238, 1));
-        box-shadow: -3px 3px orange, -2px 2px orange, -1px 1px orange;
-        border: 1px solid orange;
+       
+        // border: 1px solid;
       }
     }
     .iconsWrap {
