@@ -7,19 +7,10 @@
 
   .left {
     margin: 0px 50px;
-    // border: 5px solid black;
     display: flex;
     flex: 0.5;
-    //overflow: hidden;
-    // padding-left: 50px; // added 11/1 while error in button join
     align-items: center;
-    // justify-content: center;
-    // align-content: flex-start;
-    // .wrappper {
-    //   border: 15px solid green;
-    //   width: 50%;
-    //   height: 100%;
-    // }
+
     h1 {
       font-family: "Barlow Condensed", sans-serif, bold;
       font-weight: 600;
@@ -49,8 +40,8 @@
       border-radius: 80%;
       font-family: "Barlow Condensed", sans-serif;
       font-weight: 500;
-      background-color: #4A7AFF;
-      border:  1px darkgreen;
+      background-color: #4a7aff;
+      border: 1px darkgreen;
       color: $Yellowcolor;
       font-size: 22px;
       padding: 10px 10px;
@@ -58,7 +49,7 @@
       // box-shadow: (0 0 5px rgba(81, 203, 238, 1));
       // box-shadow: -3px 3px orange, -2px 2px orange, -1px 1px orange;
       &:hover {
-        background-color: #DCF2F0;
+        background-color: #dcf2f0;
         color: $mainColor;
         // box-shadow: (0 0 10px rgb(209, 238, 81));
         // transform: translate(0.9em, -0.9em);
@@ -73,15 +64,15 @@
       height: 6vh;
       width: 15vw;
       padding: 1rem 1rem;
-       border-radius: 10px;
-      background-color: #F2F2F2;
-       transition: 0.3s background-color ease-in-out, 0.3s box-shadow ease-in-out;
+      border-radius: 10px;
+      background-color: #f2f2f2;
+      transition: 0.3s background-color ease-in-out, 0.3s box-shadow ease-in-out;
 
       // box-shadow: (0 2px 5px rgba(81, 203, 238, 1));
       // box-shadow: -3px 3px orange, -2px 2px orange, -1px 1px orange;
       &:hover {
         // box-shadow: (0 2px 5px rgba(81, 203, 238, 1));
-       
+
         // border: 1px solid;
       }
     }
