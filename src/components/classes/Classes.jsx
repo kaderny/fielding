@@ -31,6 +31,7 @@ function Classes() {
           <SvgOffer4 className="svgof" />
         </div>
       </div>
+
       <p>SEE RESULTS IN 10 SESSIONS</p>
     </div>
   );
