@@ -2,7 +2,13 @@ import * as React from "react";
 
 function SvgOffer3(props) {
   return (
-    <svg width={82} height={100} xmlns="http://www.w3.org/2000/svg" {...props}>
+    <svg
+      viewBox="0 0 82 100"
+      width={82}
+      height={100}
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
       <defs>
         <linearGradient
           x1={0.772}

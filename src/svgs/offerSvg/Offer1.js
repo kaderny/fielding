@@ -3,6 +3,7 @@ import * as React from "react";
 function SvgOffer1(props) {
   return (
     <svg
+      viewBox="0 0 202 166"
       width={202}
       height={166}
       xmlnsXlink="http://www.w3.org/1999/xlink"

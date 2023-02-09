@@ -2,7 +2,13 @@ import * as React from "react";
 
 function SvgOffer4(props) {
   return (
-    <svg width={278} height={251} xmlns="http://www.w3.org/2000/svg" {...props}>
+    <svg
+      viewBox="0 0 278 251"
+      width={278}
+      height={251}
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
       <path d="M4 4h269.613v242.652H4V4z" fill="none" />
       <g fillRule="evenodd">
         <path
