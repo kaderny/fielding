@@ -4,6 +4,7 @@
   background-color: white;
   display: flex;
   overflow: hidden;
+  flex-wrap: wrap;
 
   .left {
     margin: 0px 50px;
@@ -14,16 +15,16 @@
     h1 {
       font-family: "Barlow Condensed", sans-serif, bold;
       font-weight: 600;
-      font-size: 40px;
+      font-size: 2rem;
       overflow: hidden;
       line-height: 1.2;
     }
     h2 {
-      font-size: 30px;
+      font-size: 1.8rem;
       line-height: 1.2;
     }
     h3 {
-      font-size: 27px;
+      font-size: 1.5rem;
       line-height: 1.2;
     }
 
@@ -43,7 +44,7 @@
       background-color: #4a7aff;
       border: 1px darkgreen;
       color: $Yellowcolor;
-      font-size: 22px;
+      font-size: 1rem;
       padding: 10px 10px;
       margin-left: 10px;
       // box-shadow: (0 0 5px rgba(81, 203, 238, 1));
@@ -92,8 +93,8 @@
         .icon {
           // border: 2px solid pink;
 
-          height: 40px;
-          width: 40px;
+          height: 2rem;
+          width: 2rem;
           // box-shadow: -3px 3px orange, -2px 2px orange, -1px 1px orange;
           &:hover {
             // transition-timing-function: cubic-bezier(0.13, 0.44, 0.54, 0.77);
@@ -132,7 +133,15 @@
       overflow: hidden;
       height: 70vh;
       width: 70vh;
+      // .svgwom {
+      //   height: 100%;
+      //   width: 100%;
+      // }
       // transform: rotateY(35deg);
     }
+  }
+  @media (max-width: 756px) {
+    background-color: blue;
+    flex-direction: column;
   }
 }
