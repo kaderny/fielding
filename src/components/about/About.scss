@@ -12,26 +12,33 @@ $gradient: linear-gradient(
 .wrapperAbout {
   display: flex;
   margin: 50px 50px;
+
   // border: 2px solid blue;
   overflow: hidden;
 }
 .imgkimi {
-  // border: 2px solid black;
-  // position: absolute;
-  // display: flex;
-  // width: 50%;
-  overflow: visible;
-  background-color: white;
-  border-top-left-radius: 100%;
-  border-top-right-radius: 0%;
-  border-bottom-left-radius: 0%;
-  border-bottom-right-radius: 0%;
+  // border: 2px solid red;
+  // // position: absolute;
+  display: flex;
+  flex: 0.5;
+  justify-content: center;
+  align-items: center;
+  // // width: 50%;
+  // overflow: visible;
+  // background-color: white;
+  // border-top-left-radius: 100%;
+  // border-top-right-radius: 0%;
+  // border-bottom-left-radius: 0%;
+  // border-bottom-right-radius: 0%;
   // z-index: 0;
   .imgkimi1 {
     // z-index: 1;
 
-    height: 200px;
-    width: 200px;
+    // border: 2px solid black;
+    display: flex;
+
+    height: 300px;
+    width: 300px;
     // align-items: center;
     // justify-content: center;
   }
@@ -42,15 +49,14 @@ p {
   flex: 0.7;
   display: flex;
   font-family: "Barlow Condensed", sans-serif, medium;
-  font-size: 0.8rem;
+  font-size: 2rem;
   overflow: hidden;
   flex-wrap: wrap;
 }
 .aboutsvgs {
   display: flex;
-  justify-content: space-between;
-
-  margin: 50px 50px;
+  justify-content: space-around;
+  // padding: 50px 50px;
   animation: bounce 1s infinite alternate;
   -webkit-animation: bounce 1s infinite alternate;
 }
@@ -68,5 +74,33 @@ p {
   }
   to {
     transform: translateY(-15px);
+  }
+}
+@media (max-width: 765px) {
+  p {
+    font-size: 1rem;
+  }
+
+  .aboutsvgs {
+    // border: 2px solid black;
+    // width: 100%;
+    // scale: 0.5;
+    justify-content: space-between;
+    padding: 0 50px;
+    .svg1 {
+      // border: 1px solid black;
+      // scale: 0.5;
+      // padding: 0 5px;
+      // padding: auto;
+
+      padding-right: 2px;
+      justify-content: space-between;
+    }
+  }
+  .imgkimi {
+    .imgkimi1 {
+      width: 170px;
+      height: 170px;
+    }
   }
 }

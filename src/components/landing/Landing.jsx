@@ -31,12 +31,12 @@ export default function Landing() {
           </h1>
           <h2>
             With <span className="blue">KIMBERLY FIELDING </span> OVER{" "}
-            <span className="blue">25</span> years of experience.
+            <span className="blue">25</span> YEARS OF EXPERIENCE.
           </h2>
 
           <h3>
             Your back hurts ? I'm based in <span className="blue">NYC</span> ,
-            and I got your <span className="blue">Back</span> .
+            and I got your back
           </h3>
 
           <div className="buttonInput">

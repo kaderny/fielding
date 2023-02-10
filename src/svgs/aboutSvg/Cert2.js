@@ -3,6 +3,7 @@ import * as React from "react";
 function SvgCert2(props) {
   return (
     <svg
+      viewBox="0 0 120 120"
       width={120}
       height={120}
       xmlnsXlink="http://www.w3.org/1999/xlink"

@@ -13,29 +13,25 @@
     display: flex;
     flex: 0.5;
     align-items: center;
-
     overflow: hidden;
-    // padding-top: 2vh;
-    // justify-content: center;
 
     h1 {
-      font-family: "Barlow Condensed", sans-serif, bold;
+      // font-family: "Barlow Condensed", sans-serif, bold;
       font-weight: 600;
-      font-size: 3rem;
+      font-size: 4rem;
       overflow: hidden;
       line-height: 1.2;
       max-width: fit-content;
     }
     h2 {
-      font-size: 2rem;
+      font-size: 3rem;
     }
     h3 {
-      font-size: 1.7rem;
-      line-height: 1.2;
+      font-size: 2rem;
     }
 
     .blue {
-      color: $mainColor;
+      color: #1943cf;
     }
 
     .buttonInput {
@@ -157,11 +153,19 @@
 }
 @media (max-width: 756px) {
   .landing {
+    justify-content: center;
     flex-direction: column;
+
     .left {
-      flex: 0.7;
+      // flex: 0.6;
       h1 {
         font-size: 2.5rem;
+      }
+      h2 {
+        font-size: 2rem;
+      }
+      h3 {
+        display: none;
       }
       .iconsWrap {
         // max-width: 80%;
@@ -173,12 +177,5 @@
     // border: #4a7aff solid 2px;
     // align-items: center;
     flex-direction: column;
-  }
-  // h1 {
-  //   font-size: 5px;
-  //   color: #4a7aff;
-  // }
-  h3 {
-    display: none;
   }
 }
