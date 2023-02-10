@@ -27,7 +27,7 @@ export default function Landing() {
       <div className="left">
         <div className="wrapper">
           <h1>
-            START YOUR <span className="blue" ref={textRef}></span> JOURNEY
+            START YOUR <span className="blue" ref={textRef}></span>
           </h1>
           <h2>
             With <span className="blue">KIMBERLY FIELDING </span> OVER{" "}
@@ -51,7 +51,9 @@ export default function Landing() {
           </div>
 
           <div className="iconsWrap">
-            <h2>Let's connect : </h2>
+            <div className="connect">
+              <h3>Let's connect:</h3>
+            </div>
             <div className="iconsContainer">
               <a href="mailto:kaderbrklyn@outlook.com">
                 <SvgNewMessage className="icon" />

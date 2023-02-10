@@ -42,8 +42,9 @@ p {
   flex: 0.7;
   display: flex;
   font-family: "Barlow Condensed", sans-serif, medium;
-  font-size: 30px;
+  font-size: 0.8rem;
   overflow: hidden;
+  flex-wrap: wrap;
 }
 .aboutsvgs {
   display: flex;

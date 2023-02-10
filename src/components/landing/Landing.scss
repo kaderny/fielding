@@ -5,26 +5,32 @@
   display: flex;
   overflow: hidden;
   flex-wrap: wrap;
-
+  width: 100%;
   .left {
-    margin: 0px 50px;
+    // border: #4a7aff 2px solid;
+    flex-wrap: wrap;
+    padding: 25px 50px;
     display: flex;
     flex: 0.5;
     align-items: center;
 
+    overflow: hidden;
+    // padding-top: 2vh;
+    // justify-content: center;
+
     h1 {
       font-family: "Barlow Condensed", sans-serif, bold;
       font-weight: 600;
-      font-size: 2rem;
+      font-size: 3rem;
       overflow: hidden;
       line-height: 1.2;
+      max-width: fit-content;
     }
     h2 {
-      font-size: 1.8rem;
-      line-height: 1.2;
+      font-size: 2rem;
     }
     h3 {
-      font-size: 1.5rem;
+      font-size: 1.7rem;
       line-height: 1.2;
     }
 
@@ -35,7 +41,7 @@
     .buttonInput {
       display: flex;
       align-items: center;
-      margin-top: 40px;
+      padding-top: 20px;
     }
     .buttonJoin {
       border-radius: 80%;
@@ -62,8 +68,8 @@
     }
     input {
       // border: 1px $mainColor solid;
-      height: 6vh;
-      width: 15vw;
+      height: 30px;
+      width: 210px;
       padding: 1rem 1rem;
       border-radius: 10px;
       background-color: #f2f2f2;
@@ -79,16 +85,22 @@
     }
     .iconsWrap {
       // border: 2px solid red;
-      margin-top: 40px;
       display: flex;
-      // max-width: 90%;
-
+      margin-top: 3vh;
+      align-items: center;
+      // justify-content: center;
+      width: 100%;
+      .connect {
+        display: flex;
+        flex-wrap: wrap;
+        padding-right: 2vw;
+      }
       .iconsContainer {
         // border: 2px solid pink;
         display: flex;
         align-items: center;
-        width: 70%;
-        justify-content: space-evenly;
+        width: 60%;
+        justify-content: space-between;
 
         .icon {
           // border: 2px solid pink;
@@ -119,20 +131,22 @@
   }
 
   .right {
-    margin: 25px 50px;
     display: flex;
+
+    padding: 25px 50px;
     flex: 0.5;
     overflow: hidden;
     align-items: center;
-    justify-content: center;
+    // justify-content: center;
     .svgContainer {
       // border: 5px solid black;
       display: flex;
       align-items: center;
       justify-content: center;
       overflow: hidden;
-      height: 70vh;
-      width: 70vh;
+
+      height: 75%;
+      width: 75%;
       // .svgwom {
       //   height: 100%;
       //   width: 100%;
@@ -140,8 +154,31 @@
       // transform: rotateY(35deg);
     }
   }
-  @media (max-width: 756px) {
-    background-color: blue;
+}
+@media (max-width: 756px) {
+  .landing {
     flex-direction: column;
+    .left {
+      flex: 0.7;
+      h1 {
+        font-size: 2.5rem;
+      }
+      .iconsWrap {
+        // max-width: 80%;
+      }
+    }
+  }
+  .svgContainer {
+    // transform: scale(0.7);
+    // border: #4a7aff solid 2px;
+    // align-items: center;
+    flex-direction: column;
+  }
+  // h1 {
+  //   font-size: 5px;
+  //   color: #4a7aff;
+  // }
+  h3 {
+    display: none;
   }
 }
