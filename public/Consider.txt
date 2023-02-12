@@ -1,0 +1,3 @@
+redi_original :/\* /index.html 200
+web-vitals@1.1.2 package, you can use its utility functions to measure Core Web Vitals for your web pages.
+//its already installed in my computer , once i'm done with my website i can run it to find web performance

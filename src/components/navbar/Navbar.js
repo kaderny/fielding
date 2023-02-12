@@ -6,9 +6,11 @@ function Navbar() {
     <div className="navbar" id="navbar">
       <div className="wrapper">
         <div className="left">
-          <a href="/landing">
-            <img src="assets/images/kimiBLUE.png" alt="kimilogo" />
-          </a>
+          <div className="logo">
+            <a href="/landing">
+              <img src="assets/images/kimiBLUE.png" alt="kimilogo" />
+            </a>
+          </div>
           <div className="p1">KIM FIELDING PILATES</div>
         </div>
         {/* <div className="p1">Kim Fielding Pilates</div> */}

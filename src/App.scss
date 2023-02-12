@@ -11,7 +11,7 @@
   .sections {
     width: 100%;
     height: calc(100vh - 75px);
-    background-color: rgb(151, 93, 103);
+    // background-color: rgb(151, 93, 103);
     position: relative;
     top: 70px;
     scroll-behavior: smooth; //to make scrolling smoother
@@ -23,7 +23,7 @@
 
     > * {
       width: 100vw;
-      height: calc(100vh - 70px);
+      height: calc(100vh - 75px);
     }
   }
 }
