@@ -67,15 +67,22 @@
   }
 
   .navbar {
+    width: 100%;
+    border: 1px black solid;
+    display: flex;
     .wrapper {
+      align-items: center;
       .left {
-        flex: 1;
+        display: flex;
         width: 100%;
+        border: 1px black solid;
+
         .logo {
           width: 100%;
           border: 2px solid black;
         }
         .p1 {
+          width: 100%;
           font-size: 1.2rem;
           color: grey;
         }
