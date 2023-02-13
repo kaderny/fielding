@@ -11,7 +11,7 @@ $gradient: linear-gradient(
 
 .wrapperAbout {
   display: flex;
-  margin: 50px 50px;
+  padding-left: 50px;
 
   // border: 2px solid blue;
   overflow: hidden;
@@ -54,11 +54,36 @@ p {
   flex-wrap: wrap;
 }
 .aboutsvgs {
+  margin: 0 50px;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+  // justify-content: space-between;
   // padding: 50px 50px;
   animation: bounce 1s infinite alternate;
   -webkit-animation: bounce 1s infinite alternate;
+  .aboutsvgs1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    .svg1 {
+      // border: 1px solid black;
+      // scale: 0.5;
+      // padding: 0 5px;
+      // padding: auto;
+      padding-right: 25px;
+      justify-content: space-between;
+    }
+  }
+  .aboutsvgs2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    .svg1 {
+      padding-right: 25px;
+      justify-content: space-between;
+    }
+  }
 }
 @keyframes bounce {
   from {
@@ -82,11 +107,13 @@ p {
   }
 
   .aboutsvgs {
-    // border: 2px solid black;
+    //border: 2px solid black;
     // width: 100%;
-    // scale: 0.5;
-    justify-content: space-between;
-    padding: 0 50px;
+    // scale: 0.75;
+    flex-direction: column;
+
+    // justify-content: space-between;
+    // padding: 0px 50px;
     .svg1 {
       // border: 1px solid black;
       // scale: 0.5;

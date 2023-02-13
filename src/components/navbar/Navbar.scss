@@ -68,23 +68,26 @@
 
   .navbar {
     width: 100%;
-    border: 1px black solid;
+    // border: 1px black solid;
     display: flex;
     .wrapper {
       align-items: center;
+      .right {
+        width: 10%;
+      }
       .left {
         display: flex;
-        width: 100%;
-        border: 1px black solid;
+        width: 90%;
+        // border: 1px black solid;
 
         .logo {
-          width: 100%;
-          border: 2px solid black;
+          // border: 2px solid black;
+          width: 40%;
         }
         .p1 {
           width: 100%;
-          font-size: 1.2rem;
-          color: grey;
+          font-size: 1.5rem;
+          color: black;
         }
       }
     }
