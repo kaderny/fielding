@@ -7,7 +7,9 @@ export default function Packages() {
   return (
     <div className="packages" id="packages">
       <PageHeadings name="Packages" />
-      <p>we offer a competive salary</p>
+      <div className="wraperPackages">
+        <p>we offer a competive salary</p>
+      </div>
     </div>
   );
 }

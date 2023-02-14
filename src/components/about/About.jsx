@@ -17,12 +17,15 @@ function About() {
       <div className="wrapperAbout">
         {/* <img className="imgkimi" src="assets/images/kim2.jpg" alt="kimi" /> */}
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente
-          magnam error pariatur laudantium possimus rem cupiditate ipsam qui
-          veniam dolor similique aut quia beatae blanditiis odio expedita velit
-          labore id doloremque, molestiae consectetur facere voluptatum fuga
-          perspiciatis! Voluptas, dignissimos atque asperiores minus ea reicien
-          dis nihil, quaerat cumque nemo placeat delectus?
+          Hello, i have been in the fitness industry for 25 years and have been
+          teaching Pilates for over 10 of those years. i received my B.A. in
+          Psychology and did a Master’s program at Springfield College in Health
+          Promotion/ Wellness Management with advanced study in Counseling. i
+          was a teacher in the Mind Body Fitness training program with other
+          faculty members including Lesley Powell, Doris Pasteleur-Hall and Dr.
+          Martha Eddy at Movements Afoot. i taught the Pilates repertoire and
+          question & answer program to go along with the Physical Mind
+          Institute, The Method Pilates certificate
         </p>
 
         <div className="imgkimi">
@@ -38,10 +41,10 @@ function About() {
         </div>
 
         <div className="aboutsvgs2">
-          <SvgCert5 className="svg1" />
-          <SvgCert6 className="svg1" />
-          <SvgCert7 className="svg1" />
-          <SvgCert8 className="svg1" />
+          <SvgCert5 className="svg2" />
+          <SvgCert6 className="svg2" />
+          <SvgCert7 className="svg2" />
+          <SvgCert8 className="svg2" />
         </div>
       </div>
     </div>

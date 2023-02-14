@@ -30,7 +30,7 @@ export default function Landing() {
             START YOUR <span className="blue" ref={textRef}></span>
           </h1>
           <h2>
-            With <span className="blue">KIMBERLY FIELDING </span> OVER{" "}
+            WITH <span className="blue">KIMBERLY FIELDING </span> OVER{" "}
             <span className="blue">25</span> YEARS OF EXPERIENCE.
           </h2>
 
