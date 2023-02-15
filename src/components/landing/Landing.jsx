@@ -45,6 +45,7 @@ export default function Landing() {
               name="email"
               placeholder=" Type your em@il address"
             />
+
             <button className="buttonJoin" type="button">
               JOiN
             </button>
