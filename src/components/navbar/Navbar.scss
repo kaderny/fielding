@@ -7,7 +7,7 @@
   // justify-content: space-between;
   width: 100vw;
   height: 70px;
-  background: #42c2ff;
+  background: whitesmoke;
   overflow: hidden;
   z-index: 10;
 
@@ -42,7 +42,7 @@
         color: #481620;
       }
       a:hover {
-        color: #baff29;
+        color: #42c2ff;
         // border-bottom: 2px solid green;
       }
     }
@@ -103,16 +103,16 @@
         color: #f0efec;
         border-color: transparent;
         justify-content: center;
-        :hover {
-          color: #baff29;
-        }
+      }
+      .hamburger:hover {
+        color: #ffe14b;
       }
       .navLinksMobile {
         position: fixed;
         display: block;
-        top: 65px;
-        height: 50vh;
-        width: 100%;
+        top: 75px;
+        height: 70vh;
+        width: 100vw;
         // list-style-type: none;
         background-color: #1a1b41;
         transition: all 1s ease-out;
@@ -124,13 +124,16 @@
           text-align: center;
           transition: all 0.5s ease;
           list-style: none;
-          padding: 35px 15px;
+          padding: 15px 15px;
 
           a {
             color: white;
             text-decoration: none;
             font-size: calc(1rem + 1.5vw);
             justify-content: space-evenly;
+          }
+          a:hover {
+            color: #ffe14b;
           }
         }
       }
