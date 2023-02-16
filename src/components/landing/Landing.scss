@@ -63,29 +63,14 @@
       user-select: none;
       -webkit-user-select: none;
       touch-action: manipulation;
-      border-radius: 70%;
+      border-radius: 50%;
       font-family: "Barlow Condensed", sans-serif;
 
-      // border: 1px darkgreen;
-      // color: $Yellowcolor;
-      // font-size: 1rem;
-      // padding: 10px 10px;
-      // margin-left: 10px;
-      // box-shadow: (0 0 5px rgba(81, 203, 238, 1));
-      // box-shadow: -3px 3px orange, -2px 2px orange, -1px 1px orange;
       &:hover {
         background-position: right center;
         /* change the direction of the change here */
         color: #fff;
         text-decoration: none;
-        // background-color: #dcf2f0;
-        // color: $mainColor;
-        // box-shadow: (0 0 10px rgb(209, 238, 81));
-        // transform: translate(0.9em, -0.9em);
-        // transition: all 0.25s linear;
-        // box-shadow: -2em 2em 0 #e1e1e1;
-        // transition-timing-function: linear; //cubic-bezier(0.13, 0.44, 0.54, 0.77);
-        // border-color: $Yellowcolor;
       }
     }
 

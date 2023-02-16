@@ -1,10 +1,11 @@
 @import "../../global.scss";
 
 .navbar {
+  // border: #1a1b41 2px solid;
   display: flex;
   position: absolute;
   align-items: center;
-  // justify-content: space-between;
+  justify-content: center;
   width: 100vw;
   height: 70px;
   background: whitesmoke;
@@ -13,11 +14,14 @@
 
   .right {
     // width: 60%;
+    display: flex;
     flex: 1;
-    // border: #1a1b41 2px solid;
+    //border: #1a1b41 2px solid;
     margin: 0 50px;
+    align-items: center;
+    justify-content: flex-end;
     // font-size: 1rem;
-    font-weight: 500;
+    // font-weight: 500;
     cursor: pointer;
     text-decoration: none;
     color: #f1ffe7;
@@ -28,14 +32,15 @@
       // border: #1a1b41 2px solid;
       display: flex;
       font-size: 1.5rem;
-      padding: 5px 5px;
-      width: 70%;
+      // padding: 5px 5px;
+      width: 80%;
       align-items: center;
       justify-content: space-between;
+
       // flex-wrap: wrap;
       //margin-right: 50px;
       list-style: none;
-      // font-weight: 200;
+      font-weight: 200;
       cursor: pointer;
       a {
         text-decoration: none;
@@ -50,21 +55,17 @@
 
   .left {
     display: flex;
-    // border: #1a1b41 2px solid;
-    // width: 40%;
-    // top: 0;
-    // right: 50px;
     margin-left: 50px;
     align-items: center;
-    justify-content: flex-start;
-    flex-wrap: wrap;
+    // justify-content: center;
+    // flex-wrap: wrap;
 
     .logo {
       // border: #1a1b41 2px solid;
       margin-right: 15px;
       .imgkimi {
-        width: 55px;
-        height: 55px;
+        width: 50px;
+        height: 50px;
       }
     }
     .p1 {
@@ -83,7 +84,7 @@
     .left {
       width: 90%;
       .logo {
-        position: absolute;
+        // position: absolute;
         left: 25px;
         font-weight: 500;
       }
@@ -96,29 +97,43 @@
       .hamburger {
         display: block;
         position: absolute;
-        top: 0;
-        right: 0;
-        background-color: #42c2ff;
-        font-size: 30px;
-        color: #f0efec;
-        border-color: transparent;
-        justify-content: center;
+        border-radius: 50%;
+        top: 15px;
+        right: 15px;
+        padding: 5px 5px;
+        text-align: center;
+        transition: 0.5s;
+        // background-size: 100% auto;
+        color: rgb(108, 103, 180);
+
+        font-weight: 200;
+        font-size: 25px;
+
+        cursor: pointer;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        background-color: transparent;
       }
       .hamburger:hover {
-        color: #ffe14b;
+        color: rgb(196, 196, 210);
       }
       .navLinksMobile {
         position: fixed;
         display: block;
-        top: 75px;
-        height: 70vh;
-        width: 100vw;
+        top: 70px;
+        height: 80vh;
+        width: 80vw;
+        overflow: hidden;
         // list-style-type: none;
-        background-color: #1a1b41;
+        background-color: #42c2ff;
+        box-shadow: (0 2px 5px rgba(81, 203, 238, 1));
         transition: all 1s ease-out;
         justify-items: center;
         justify-content: space-evenly;
-
+        // .navbar.show {
+        //   display: block;
+        // }
         li {
           width: 100%;
           text-align: center;

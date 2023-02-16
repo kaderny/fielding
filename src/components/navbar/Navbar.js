@@ -1,10 +1,24 @@
-import React from "react";
+// import React from "react";
 import "./Navbar.scss";
-import { useState } from "react";
+import { React, useEffect, useState } from "react";
 
 function Navbar() {
   const handleClick = () => setisMobile(!isMobile);
   const [isMobile, setisMobile] = useState(false);
+
+  // function toggleFunction() {
+  //   var x = document.getElementById("navbar");
+  //   x.classList.toggle("show");
+  // }
+
+  useEffect(() => {
+    setisMobile(JSON.parse(window.localStorage.getItem("isMobile")));
+  }, []);
+
+  useEffect(() => {
+    window.localStorage.setItem("isMobile", isMobile);
+  }, [isMobile]);
+
   return (
     <div className="navbar" id="navbar">
       <div className="left">
@@ -54,6 +68,7 @@ function Navbar() {
           </li>
         </ul>
         <button className="hamburger" onClick={() => handleClick()}>
+          {/* //() => handleClick() */}
           <i className={isMobile ? "fas fa-times" : "fas fa-bars"} />
         </button>
       </div>
