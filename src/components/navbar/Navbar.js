@@ -6,11 +6,6 @@ function Navbar() {
   const handleClick = () => setisMobile(!isMobile);
   const [isMobile, setisMobile] = useState(false);
 
-  // function toggleFunction() {
-  //   var x = document.getElementById("navbar");
-  //   x.classList.toggle("show");
-  // }
-
   useEffect(() => {
     setisMobile(JSON.parse(window.localStorage.getItem("isMobile")));
   }, []);

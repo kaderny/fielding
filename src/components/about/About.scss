@@ -50,30 +50,14 @@ p {
 .aboutsvgs {
   margin: 0 50px;
   display: flex;
-  justify-content: center;
+
   align-items: center;
-  // justify-content: space-between;
+  height: auto;
+  scale: 0.8;
+  justify-content: space-between;
   // padding: 50px 50px;
   animation: bounce 1s infinite alternate;
   -webkit-animation: bounce 1s infinite alternate;
-  .aboutsvgs1 .aboutsvgs2 {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    // .svg1 .svg2 {
-    //   padding-right: 25px;
-    //   justify-content: space-between;
-    // }
-  }
-  // .aboutsvgs2 {
-  //   width: 100%;
-  //   display: flex;
-  //   justify-content: space-around;
-  //   .svg1 {
-  //     padding-right: 25px;
-  //     justify-content: space-between;
-  //   }
-  // }
 }
 @keyframes bounce {
   from {
@@ -93,16 +77,22 @@ p {
 }
 @media (max-width: 765px) {
   p {
-    font-size: 0.75rem;
+    font-size: 1rem;
   }
 
   .aboutsvgs {
-    flex-direction: column;
-    .svg1 {
-      padding-right: 2px;
-      justify-content: space-between;
-    }
+    width: 100%;
+    margin: 0 50px;
+    // flex-direction: column;
+    scale: 1.7;
+    justify-content: center;
+    align-items: center;
   }
+  .svg1 {
+    padding-right: 15px;
+    justify-content: space-between;
+  }
+
   .imgkimi {
     .imgkimi1 {
       width: 170px;

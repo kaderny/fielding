@@ -33,19 +33,14 @@ function About() {
         </div>
       </div>
       <div className="aboutsvgs">
-        <div className="aboutsvgs1">
-          <SvgCert1 className="svg1" />
-          <SvgCert2 className="svg1" />
-          <SvgCert3 className="svg1" />
-          <SvgCert4 className="svg1" />
-        </div>
-
-        <div className="aboutsvgs2">
-          <SvgCert5 className="svg2" />
-          <SvgCert6 className="svg2" />
-          <SvgCert7 className="svg2" />
-          <SvgCert8 className="svg2" />
-        </div>
+        <SvgCert1 className="svg1" />
+        <SvgCert2 className="svg1" />
+        <SvgCert3 className="svg1" />
+        <SvgCert4 className="svg1" />
+        <SvgCert5 className="svg1" />
+        <SvgCert6 className="svg1" />
+        <SvgCert7 className="svg1" />
+        <SvgCert8 className="svg1" />
       </div>
     </div>
   );

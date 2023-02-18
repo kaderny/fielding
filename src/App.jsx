@@ -10,7 +10,8 @@ import Testimonials from "./components/testimonials/Testimonials";
 import Packages from "./components/cpackages/Packages";
 import Inspiration from "./components/inspiration/Inspiration";
 import Footer from "./components/footer/footer";
-
+// We use Route in order to define the different routes of our application
+import { Route, Routes } from "react-router-dom";
 function App() {
   //adding a loader here
   // const [loading, setLoading] = useState(false);
@@ -30,6 +31,9 @@ function App() {
       <Navbar />
       <div className="sections">
         <Landing />
+        <Routes>
+          <Route path="/create" element={<Landing />} />
+        </Routes>
         <About />
         <Classes />
         <Testimonials />
