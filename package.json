@@ -29,7 +29,8 @@
     "react-youtube": "^10.1.0",
     "styled-components": "^5.3.8",
     "swiper": "^6.0.2",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "webpack": "^4.28.3"
   },
   "scripts": {
     "start": "react-scripts  --openssl-legacy-provider start",
