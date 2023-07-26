@@ -9,13 +9,13 @@ import "./Classes.scss";
 function Classes() {
   return (
     <div className="classes" id="classes">
-      <PageHeadings name="What We Offer ?" />
+      <PageHeadings name="What We Offer?" />
       <h2>
-        PILATES , WELLNESS , MOVEMENT , REHABILITATION , TEACHER TRAINING
-        CERTIFICATE , WORKSHIOS , AND CONTINUING EDUCATION .
+        Pilates , Wellness , Movment , Rehabilliation , Teacher Training
+        Certificate , Workshops , AND Continuing Education .
       </h2>
       <h3>
-        IN PERSON , VIRTUAL OR HYBRID WITH A HOLISTIC AND INTEGRATED APPROACH
+        In person , Virtual OR Hybrid with a holistic and integrated approarch.
       </h3>
       <div className="offersvg">
         <div className="heya" href="">

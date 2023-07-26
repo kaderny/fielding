@@ -3,23 +3,28 @@
 .navbar {
   display: flex;
   position: absolute;
+  // position: sticky;
+  // top: 50px;
   align-items: center;
   justify-content: center;
   width: 100vw;
-  height: 70px;
-  background: whitesmoke;
+  height: 50px;
+  background: white;
+  box-shadow: inset 0 -1px 0 rgb(0 0 0 / 20%);
   overflow: hidden;
   z-index: 10;
 
   .right {
+    // border: 1px solid black;
     display: flex;
-    flex: 1;
+    flex: 0.7;
     margin: 0 50px;
     align-items: center;
     justify-content: flex-end;
     cursor: pointer;
     text-decoration: none;
     color: #f1ffe7;
+    align-self: stretch;
     .hamburger {
       display: none;
     }
@@ -30,28 +35,33 @@
       align-items: center;
       justify-content: space-between;
       list-style: none;
-      font-weight: 200;
+      font-weight: 500;
       cursor: pointer;
       a {
         text-decoration: none;
-        color: #481620;
+        color: black;
       }
       a:hover {
-        color: #42c2ff;
+        color: $blue;
       }
     }
   }
 
   .left {
+    // border: 1px solid black;
+    // position: relative;
     display: flex;
     margin-left: 50px;
-    align-items: center;
-
+    // align-items: center;
+    // justify-content: center;
+    flex: 0.3; // flex: 0.3 auto;
+    align-self: stretch;
     .logo {
+      align-items: center;
       margin-right: 15px;
       .imgkimi {
-        width: 50px;
-        height: 50px;
+        width: 35px;
+        height: 35px;
       }
     }
     .p1 {
@@ -59,48 +69,52 @@
       padding-right: 10px;
       font-size: 1.5rem;
       font-weight: 500;
-      color: $mainColor;
+      color: black;
     }
   }
 }
 
 //reponsive part
-@media (max-width: 760px) {
+@media (max-width: 1100px) {
   .navbar {
     .left {
+      flex: content;
       width: 90%;
       .logo {
         // position: absolute;
         left: 25px;
-        font-weight: 500;
+        // font-weight: 500;
       }
     }
 
     .right {
+      margin: 0;
       .navLinksDesktop {
         display: none;
       }
       .hamburger {
+        // background-image: url("../../../public/assets/images/fav.png");
+        background-repeat: no-repeat;
         display: block;
         position: absolute;
-        border-radius: 50%;
-        top: 15px;
+        // border-radius: 50%;
+        top: 5px;
         right: 15px;
         padding: 5px 5px;
         text-align: center;
         transition: 0.5s;
-        background-size: 100% auto;
-        color: rgb(219, 218, 238);
+        // background-size: 100% auto;
+        //
         border: none;
-        font-weight: 200;
+        font-weight: 300;
         font-size: 20px;
-        box-shadow: 0px 0px 14px -7px #6953e7;
-        background-image: linear-gradient(
-          45deg,
-          #501475 0%,
-          #acb2f9 51%,
-          #2fffd9 100%
-        );
+        // box-shadow: 0px 0px 14px -7px #6953e7;
+        // background-image: linear-gradient(
+        //   45deg,
+        //   #501475 0%,
+        //   #acb2f9 51%,
+        //   #2fffd9 100%
+        // );
         cursor: pointer;
         user-select: none;
         -webkit-user-select: none;
@@ -113,11 +127,12 @@
       .navLinksMobile {
         position: fixed;
         display: block;
-        top: 70px;
-        height: 80vh;
-        width: 80vw;
+        top: 50px;
+        height: 100%;
+        width: 100%;
+        // margin-left: 0 !important;
         overflow: hidden;
-        background-color: #42c2ff;
+        background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
         box-shadow: (0 2px 5px rgba(81, 203, 238, 1));
         transition: all 1s ease-out;
         justify-items: center;

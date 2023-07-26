@@ -1,6 +1,6 @@
 // import React from "react";
 import "./Navbar.scss";
-import { React, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 
 function Navbar() {
   const handleClick = () => setisMobile(!isMobile);
@@ -26,7 +26,9 @@ function Navbar() {
             />
           </a>
         </div>
-        <div className="p1">KIM FIELDING PILATES</div>
+        <div className="p1">
+          <a>KIM FIELDING PILATES</a>
+        </div>
       </div>
       {/* <div className="p1">Kim Fielding Pilates</div> */}
       <div className="right">
@@ -59,10 +61,15 @@ function Navbar() {
             <a href="#inspiration">Inspiration</a>
           </li>
           <li>
-            <a href="/">Sign-UP</a>
+            <a href="#landing">Sign-UP</a>
           </li>
         </ul>
-        <button className="hamburger" onClick={() => handleClick()}>
+        <button
+          id="hamburger"
+          aria-label="hamburger"
+          className="hamburger"
+          onClick={() => handleClick()}
+        >
           {/* //() => handleClick() */}
           <i className={isMobile ? "fas fa-times" : "fas fa-bars"} />
         </button>

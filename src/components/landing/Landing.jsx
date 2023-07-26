@@ -1,7 +1,6 @@
-import React from "react";
 import "./Landing.scss";
-import { useState, useEffect, useRef } from "react";
-import { useNavigate } from "react-router";
+import React, { useState, useEffect, useRef } from "react";
+// import { useNavigate } from "react-router";
 import { init } from "ityped";
 import SvgMiniPilates from "../../svgs/MiniPilates";
 import SvgFacebook from "../../svgs/Facebook";
@@ -9,8 +8,24 @@ import Instagram from "../../svgs/Instagram";
 import SvgNewMessage from "../../svgs/NewMessage";
 import SvgTwitter from "../../svgs/Twitter";
 import SvgYoutube from "../../svgs/Youtube";
+// import axios from "axios";
 
 export default function Landing() {
+  //mailchimp
+  // const mailchimp = require("@mailchimp/mailchimp_marketing");
+
+  // mailchimp.setConfig({
+  //   apiKey: "c0bad8a2d632c532e4e9cc91ca04eca6-us10",
+  //   server: "us10",
+  // });
+
+  // async function run() {
+  //   const response = await mailchimp.ping.get();
+  //   console.log(response);
+  // }
+
+  // run();
+
   //i typedto show  different text
   const textRef = useRef();
   useEffect(() => {
@@ -20,83 +35,98 @@ export default function Landing() {
       backDelay: 1500,
       backSpeed: 70,
       // showCursor: true,
-      strings: ["PILATES", "WELLNESS", "CAREER", "YOGA"],
+      strings: ["Pilates", "Wellness", "Carrer", "Yoga"],
     });
   }, []);
   //***************************END TEXTREF */
 
   //HANDLE FORM EMAIL TO MONGO DB
-  const [form, setForm] = useState({
-    email: "",
-  });
-  const navigate = useNavigate();
+  const [email, setEmail] = useState("");
+  const [submitting, setSubmitting] = useState(false);
+  const [success, setSuccess] = useState(false);
+  const [error, setError] = useState("");
 
-  // These methods will update the state properties.
-  function updateForm(value) {
-    return setForm((prev) => {
-      return { ...prev, ...value };
-    });
-  }
-
-  // This function will handle the submission.
-  async function onSubmit(e) {
+  const handleSubmit = (e) => {
     e.preventDefault();
+    setSubmitting(true);
 
-    // When a post request is sent to the create url, we'll add a new record to the database.
-    const newPerson = { ...form };
-
-    await fetch("http://localhost:1212/record/add", {
+    fetch("http://192.168.1.214:3001/api/submit-email", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify(newPerson),
-    }).catch((error) => {
-      window.alert(error);
-      return;
-    });
-
-    setForm({ email: "" });
-    navigate("/");
-  }
-
+      body: JSON.stringify({ email }),
+    })
+      .then((response) => {
+        if (response.ok) {
+          setSuccess(true);
+          setError("");
+        } else {
+          throw new Error("Email already suscribed ");
+        }
+      })
+      .catch((error) => {
+        setSuccess(false);
+        setError(error.message || "An error occurred");
+      })
+      .finally(() => {
+        setSubmitting(false);
+      });
+  };
   return (
     <div className="landing" id="landing">
       <div className="left">
-        <div className="wrapper">
+        <div className="wrapperLeft">
           <h1>
-            START YOUR <span className="blue" ref={textRef}></span>
+            Start Your <span className="blue" ref={textRef}></span>
           </h1>
           <h2>
-            WITH <span className="blue">KIMBERLY FIELDING </span> OVER{" "}
-            <span className="blue">25</span> YEARS OF EXPERIENCE.
+            With <span className="blue">Kimberly Fielding </span> Over{" "}
+            <span className="blue">25</span> Years Of Experience.
           </h2>
 
           <h3>
-            Your back hurts ? I'm based in <span className="blue">NYC</span> ,
-            and I got your back
+            I'm based in <span className="blue">NYC</span> , join now to learn
+            more about my services
           </h3>
 
-          <form onSubmit={onSubmit}>
+          <form onSubmit={handleSubmit}>
             <div className="buttonInput">
               <input
-                type="text"
+                type="email"
                 name="email"
                 id="email"
                 placeholder=" Type your em@il address"
-                value={form.email}
-                onChange={(e) => updateForm({ email: e.target.value })}
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                required
               />
 
-              <button className="buttonJoin" type="submit">
+              <button
+                className="buttonJoin"
+                type="submit"
+                disabled={submitting}
+              >
                 JOiN
               </button>
+              <div>
+                {success && (
+                  <p style={{ color: "green" }}>
+                    Horay! check your email for exclusive offer.
+                  </p>
+                )}
+                {error && (
+                  <p style={{ color: "red" }} className="error">
+                    {error}
+                  </p>
+                )}
+              </div>
             </div>
           </form>
 
           <div className="iconsWrap">
             <div className="connect">
-              <h3>Let's connect:</h3>
+              <h2>Let's connect:</h2>
             </div>
             <div className="iconsContainer">
               <a
@@ -136,6 +166,9 @@ export default function Landing() {
                 <SvgYoutube className="icon" />
               </a>
             </div>
+          </div>
+          <div className="phone">
+            <a href="tel:9292838474"> Call me Today : 929-283-8474 </a>
           </div>
         </div>
       </div>

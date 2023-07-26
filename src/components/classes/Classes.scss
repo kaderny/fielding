@@ -7,14 +7,15 @@
     align-items: center;
     justify-content: space-between;
     margin: 50px;
-
+    flex-wrap: wrap;
+    gap: 50px;
     .heya {
       display: flex;
       align-items: center;
       justify-content: center;
       justify-items: center;
       // text-align: center;
-      background-color: #f5f5f5;
+      background-color: #e6f2ff;
       border-radius: 50%;
       width: 25vh;
       height: 25vh;
@@ -27,11 +28,12 @@
   }
   h2 {
     padding-left: 50px;
-    font-size: 20px;
+    font-size: 1.5rem;
+    // font-weight: 400;
   }
   h3 {
     padding-left: 50px;
-    font-size: 20px;
+    font-size: 1rem;
   }
   p {
     justify-content: center;
@@ -40,15 +42,12 @@
 }
 @media (max-width: 756px) {
   .classes {
-    background-color: grey;
     flex-direction: column;
     .offersvg {
-      background-color: blueviolet;
-      flex-direction: column;
-      .heya {
-        width: 18vh;
-        height: 18vh;
-      }
+      // .heya {
+      //   width: 20vh;
+      //   height: 20vh;
+      // }
     }
   }
 }

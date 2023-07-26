@@ -1,0 +1,17 @@
+1- call button in landing 
+2-using swiper 
+3-stop video from enlarge in mobile screen 
+fix space top of landing in mobile view 
+sticky navbar issue 
+i have to add routing instead of href with ids 
+2-entry animation for div , text 
+3-carousel for certification 
+4-add private classes sections 
+5-add testimonials 
+6-add marketing email 
+7-add contact us page 
+8-make all responsive 
+9-infinite carousel 
+10- make numbers incremented animation 
+
+

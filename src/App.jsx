@@ -1,7 +1,6 @@
 import React from "react";
 import "./App.scss";
-// import { useState, useEffect } from "react";
-// import ClipLoader from "react-spinners/ClipLoader";
+
 import Navbar from "./components/navbar/Navbar";
 import Landing from "./components/landing/Landing";
 import About from "./components/about/About";

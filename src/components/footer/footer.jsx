@@ -3,8 +3,13 @@ import "./footer.scss";
 function footer() {
   return (
     <div className="footer">
-      <a href="/landing">
-        <img src="assets/images/kimiBLUE.png" width="50px" alt="kimilogo" />
+      <div className="logoo">
+        <img
+          className="logo"
+          src="assets/images/kimiBLUE.png"
+          width="50px"
+          alt="kimilogo"
+        />
         {/* <g
           class="png"
           style="display: block;"
@@ -18,8 +23,12 @@ function footer() {
             xlink:href="assets/images/kimiBLUE.png"
           ></image>
         </g> */}
-      </a>
-      <p>copyright {new Date().getFullYear()}</p>
+
+        <p>copyright {new Date().getFullYear()}</p>
+        <div className="phone">
+          <a href="tel:9292838474"> Call me Today : 9292-283-8474 </a>
+        </div>
+      </div>
       {/* console.log {date}; */}
     </div>
   );

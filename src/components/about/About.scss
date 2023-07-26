@@ -1,90 +1,152 @@
-$gradient: linear-gradient(
-  45deg,
-  rgba(255, 221, 51, 1) 0%,
-  rgba(25, 67, 207, 1) 100%
-);
+//wavy gradient working fine
+
+// background: linear-gradient(
+//     315deg,
+//     rgb(164, 224, 35) 3%,
+//     rgba(60, 132, 206, 1) 38%,
+//     rgba(48, 238, 226, 1) 68%,
+//     rgb(47, 145, 225) 98%
+//   );
+//   animation: gradient 15s ease infinite;
+//   background-size: 400% 400%;
+//   background-attachment: fixed;
+
+//   @keyframes gradient {
+//     0% {
+//       background-position: 0% 0%;
+//     }
+//     50% {
+//       background-position: 100% 100%;
+//     }
+//     100% {
+//       background-position: 0% 0%;
+//     }
+//   }
+
+//   .wave {
+//     background: rgb(255 255 255 / 25%);
+//     border-radius: 1000% 1000% 0 0;
+//     position: fixed;
+//     width: 200%;
+//     height: 12em;
+//     animation: wave 10s -3s linear infinite;
+//     transform: translate3d(0, 0, 0);
+//     opacity: 0.8;
+//     bottom: 0;
+//     left: 0;
+//     z-index: -1;
+//   }
+
+//   .wave:nth-of-type(2) {
+//     bottom: -1.25em;
+//     animation: wave 18s linear reverse infinite;
+//     opacity: 0.8;
+//   }
+
+//   .wave:nth-of-type(3) {
+//     bottom: -2.5em;
+//     animation: wave 20s -1s reverse infinite;
+//     opacity: 0.9;
+//   }
+
+//   @keyframes wave {
+//     2% {
+//       transform: translateX(1);
+//     }
+
+//     25% {
+//       transform: translateX(-25%);
+//     }
+
+//     50% {
+//       transform: translateX(-50%);
+//     }
+
+//     75% {
+//       transform: translateX(-25%);
+//     }
+
+//     100% {
+//       transform: translateX(1);
+//     }
+//   }
 
 .about {
-  background-color: whitesmoke;
+  background: linear-gradient(
+    358.08deg,
+    rgba(206, 230, 255, 0.4) 1.52%,
+    rgba(236, 245, 255, 0) 95.48%
+  );
   overflow: hidden;
-}
 
-.wrapperAbout {
-  display: flex;
-  padding-left: 50px;
-
-  // border: 2px solid blue;
-  overflow: hidden;
-}
-.imgkimi {
-  // border: 2px solid red;
-  // // position: absolute;
-  display: flex;
-  flex: 0.5;
-  justify-content: center;
-  align-items: center;
-
-  .imgkimi1 {
-    // z-index: 1;
-
-    // border: 2px solid black;
+  .wrapperAbout {
     display: flex;
-
-    height: 300px;
-    width: 300px;
-    // align-items: center;
-    // justify-content: center;
-  }
-}
-
-p {
-  // border: 2px solid black;
-  padding-top: 5%;
-  flex: 0.6;
-  display: flex;
-  font-family: "Barlow Condensed", sans-serif, medium;
-  font-size: 1.5rem;
-  overflow: hidden;
-  flex-wrap: wrap;
-}
-.aboutsvgs {
-  margin: 0 50px;
-  display: flex;
-
-  align-items: center;
-  height: auto;
-  scale: 0.8;
-  justify-content: space-between;
-  // padding: 50px 50px;
-  animation: bounce 1s infinite alternate;
-  -webkit-animation: bounce 1s infinite alternate;
-}
-@keyframes bounce {
-  from {
-    transform: translateY(0px);
-  }
-  to {
-    transform: translateY(-5px);
-  }
-}
-@-webkit-keyframes bounce {
-  from {
-    transform: translateY(0px);
-  }
-  to {
-    transform: translateY(-15px);
-  }
-}
-@media (max-width: 765px) {
-  p {
-    font-size: 1rem;
+    padding-left: 50px;
+    margin-right: 50px;
+    overflow: hidden;
+    .aboutP {
+      flex: 0.5;
+      display: flex;
+      font-family: "Barlow Condensed", sans-serif, medium;
+      font-size: 1.5rem;
+      overflow: hidden;
+      flex-wrap: wrap;
+      padding-right: 5%;
+    }
+    .VidKimi {
+      border: 2px solid black;
+      display: flex;
+      flex: 0.5;
+      justify-content: center;
+      align-items: center;
+    }
   }
 
+  .aboutsvgs {
+    padding-top: 30px;
+    margin: 0 50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: auto;
+    scale: 0.8;
+    gap: 5px;
+    justify-content: space-between;
+    // padding: 50px 50px;
+    animation: bounce 1s infinite alternate;
+    -webkit-animation: bounce 1s infinite alternate;
+  }
+  @keyframes bounce {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+      transform: translateY(-5px);
+    }
+  }
+  @-webkit-keyframes bounce {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+      transform: translateY(-15px);
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .wrapperAbout {
+    flex-direction: column;
+
+    .aboutP {
+      font-size: 1.2rem !important;
+    }
+  }
   .aboutsvgs {
     width: 100%;
     margin: 0 50px;
     // flex-direction: column;
-    scale: 1.7;
+    scale: 0.5;
+    gap: 5px;
     justify-content: center;
     align-items: center;
   }
